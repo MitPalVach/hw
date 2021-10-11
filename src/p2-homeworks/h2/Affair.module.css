@@ -1,0 +1,36 @@
+.affair__wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.affair__text, .affair__priority, .delete__btn {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 4px;
+    width: 200px;
+    margin-bottom: 10px;
+    height: 16px;
+    color: #000;
+    border-radius: 3px;
+    border: 2px solid #000000;
+}
+
+.affair__priority {
+    width: 45px;
+}
+
+.delete__btn {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transition: all .5s;
+    font-weight: 700;
+}
+
+.delete__btn:hover {
+    color: #ffffff;
+    background: #000000;
+    border: 2px solid #ffffff;
+}

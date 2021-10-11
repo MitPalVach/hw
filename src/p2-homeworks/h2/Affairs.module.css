@@ -1,0 +1,30 @@
+.affairs__wrapper {
+    margin: 10px;
+    padding: 10px 15px;
+    background: #d2f600;
+}
+
+.mappedAffairs {
+
+}
+
+.filter__btn {
+    cursor: pointer;
+    border: 2px solid #000000;
+    padding: 4px 7px;
+    background: #ffffff;
+    margin: 10px 3px 3px 15px;
+    border-radius: 8px;
+    color: #000000;
+    transition: all .5s;
+}
+
+.filter__btn:hover {
+    color: #ffffff;
+    background: #000000;
+    border: 2px solid #ffffff;
+}
+
+.affairs__buttons {
+
+}

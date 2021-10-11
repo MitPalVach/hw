@@ -1,0 +1,60 @@
+.greeting__wrapper {
+    margin: 10px;
+    padding: 10px 15px;
+    min-height: 70px;
+    background: #d2f600;
+}
+
+.greeting__inner {
+    display: flex;
+    align-items: center;
+}
+
+.input, .errorInput {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 4px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 16px;
+    color: #000;
+    border-radius: 3px;
+    border: 2px solid #000000;
+}
+
+.greeting__btn {
+    cursor: pointer;
+    border: 2px solid #000000;
+    padding: 4px 7px;
+    background: #ffffff;
+    margin: 0 10px;
+    border-radius: 8px;
+    color: #000000;
+    transition: all .5s;
+}
+
+.greeting__btn:hover {
+    color: #ffffff;
+    background: #000000;
+    border: 2px solid #ffffff;
+}
+
+.error {
+    color: red;
+}
+
+.total_usersCount {
+    margin-right: 10px;
+}
+
+.total_usersNames {
+    display: flex;
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+.App {
+    width: 1170px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ccc;
+}
+
+.title {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.hw__inner {
+    padding: 10px;
+}
+
+.hw__title {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+
+
+
