@@ -7,8 +7,6 @@ type GreetingContainerPropsType = {
     users: UserType[]
     addUserCallback: (name: string) => void
 }
-
-// уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
     const [name, setName] = useState<string>('')
     const [error, setError] = useState<string>('')
@@ -31,6 +29,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (error !== null) {
+            setError('');
+        }
         if (e.key === 'Enter') {
             addUser()
         }

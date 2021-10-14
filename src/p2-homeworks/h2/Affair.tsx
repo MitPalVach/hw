@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Affair.module.css';
 import {AffairType} from "./HW2";
+import appStyles from '../../p1-main/m1-ui/u1-app/App.module.css';
 
 
 type AffairPropsType = {
@@ -17,7 +18,7 @@ function Affair(props: AffairPropsType) {
         <div className={s.affair__wrapper}>
             <div className={s.affair__text}>{props.affair.name}</div>
             <div className={s.affair__priority}>{props.affair.priority}</div>
-            <button className={s.delete__btn} onClick={deleteCallback}>x</button>
+            <button className={appStyles.btnRound} onClick={deleteCallback}>x</button>
         </div>
     )
 }

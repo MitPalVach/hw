@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import s from '../../p1-main/m1-ui/u1-app/App.module.css'
+import appStyles from '../../p1-main/m1-ui/u1-app/App.module.css'
 
 
 // types
@@ -52,10 +52,10 @@ function HW2() {
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
 
     return (
-        <div className={s.hw__inner}>
+        <div className={appStyles.hw__inner}>
             <hr/>
-            <h2 className={s.hw__title}>
-                homeworks 2
+            <h2 className={appStyles.hw__title}>
+                homeworks 2 - Affairs
             </h2>
             <Affairs
                 data={filteredAffairs}

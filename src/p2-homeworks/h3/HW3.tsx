@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
-import s from '../../p1-main/m1-ui/u1-app/App.module.css'
+import appStyles from '../../p1-main/m1-ui/u1-app/App.module.css'
 import {v1} from "uuid";
 
 
@@ -20,10 +20,10 @@ function HW3() {
     }
 
     return (
-        <div className={s.hw__inner}>
+        <div className={appStyles.hw__inner}>
             <hr/>
-            <h2 className={s.hw__title}>
-                homeworks 3
+            <h2 className={appStyles.hw__title}>
+                homeworks 3 - Greeting
             </h2>
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
         </div>

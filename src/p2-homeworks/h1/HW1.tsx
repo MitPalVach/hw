@@ -1,6 +1,6 @@
 import React from 'react'
 import Message from "./Message";
-import s from '../../p1-main/m1-ui/u1-app/App.module.css'
+import appStyles from '../../p1-main/m1-ui/u1-app/App.module.css'
 
 
 const messageData = {
@@ -12,10 +12,10 @@ const messageData = {
 
 function HW1() {
     return (
-        <div className={s.hw__inner}>
+        <div className={appStyles.hw__inner}>
             <hr/>
-            <h2 className={s.hw__title}>
-                homeworks 1
+            <h2 className={appStyles.hw__title}>
+                homeworks 1 - Message
             </h2>
             <Message
                 avatar={messageData.avatar}

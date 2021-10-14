@@ -1,8 +1,10 @@
 import React, {ChangeEvent, useState} from 'react'
-import SuperInputText from './common/c1-SuperInputText/SuperInputText'
-import s from './HW4.module.css'
-import SuperButton from './common/c2-SuperButton/SuperButton'
+import appStyles from '../../p1-main/m1-ui/u1-app/App.module.css'
+import s from './HW4.module.css';
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import Input from "../components/Input/Input";
+import Button from "../components/Button/Button";
+
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -20,12 +22,13 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
     return (
-        <div>
+        <div className={appStyles.hw__inner}>
             <hr/>
-            homeworks 4
-
-            <div className={s.column}>
-                <SuperInputText
+            <h2 className={appStyles.hw__title}>
+                homeworks 4 - Input, Button, Checkbox
+            </h2>
+            <div className={s.hw__items}>
+                <Input
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
@@ -33,26 +36,26 @@ function HW4() {
                     // spanClassName={s.testSpanError}
                 />
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
+                {/*<SuperInputText*/}
+                {/*    className={s.blue} // проверьте, работает ли смешивание классов*/}
+                {/*/>*/}
 
                 {/*----------------------------------------------------*/}
 
-                <SuperButton>
+                <Button >
                     default
-                </SuperButton>
+                </Button>
 
-                <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                <Button
+                    error={error} // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
-                </SuperButton>
+                </Button>
 
-                <SuperButton disabled>
+                <Button disabled>
                     disabled
-                </SuperButton>
+                </Button>
 
                 {/*----------------------------------------------------*/}
 
@@ -66,13 +69,6 @@ function HW4() {
                 {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
         </div>
     )
 }

@@ -23,6 +23,91 @@
     margin: 20px 0;
 }
 
+/* === input === */
+
+.input__inner {
+    display: inline-block;
+}
+
+.inputOrig, .inputError,
+.btnOrig, .btnRed, .btnRound {
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 4px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 16px;
+    color: #000;
+    border-radius: 3px;
+    border: 2px solid #000000;
+}
+
+.inputError {
+    background: #ffbebe;
+}
+
+/* === error === */
+
+.errorMessage {
+    color: red;
+    font-weight: 700;
+}
+
+/* === button === */
+
+.btnOrig, .btnRed {
+    width: 64px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.btnRed {
+    background: #ff6a6a;
+}
+
+.btnRound {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.btnOrig:hover, .btnRound:hover {
+    color: #ffffff;
+    background: #000000;
+    border: 2px solid #ffffff;
+}
+
+.btnOrig:disabled, .btnOrig[aria-disabled] {
+    cursor: auto;
+    border: 2px solid #888;
+    background: #ccc;
+    color: #888;
+    transition: none;
+}
+
+/* === span === */
+
+/*.spanTag {*/
+/*    background: #ffffff;*/
+/*    color: #888;*/
+/*    padding: 3px;*/
+/*}*/
+
+/*.spanTagError {*/
+/*    color: red;*/
+/*    font-weight: 700;*/
+/*}*/
 
 
 

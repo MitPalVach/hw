@@ -1,5 +1,7 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import s from './SuperCheckbox.module.css'
+import appStyles from '../../../../p1-main/m1-ui/u1-app/App.module.css';
+
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
