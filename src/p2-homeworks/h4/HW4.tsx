@@ -1,9 +1,9 @@
 import React, {ChangeEvent, useState} from 'react'
 import appStyles from '../../p1-main/m1-ui/u1-app/App.module.css'
 import s from './HW4.module.css';
-import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import Input from "../components/Input/Input";
 import Button from "../components/Button/Button";
+import Checkbox from "../components/Checkbox/Checkbox";
 
 
 function HW4() {
@@ -14,7 +14,7 @@ function HW4() {
         if (error) {
             alert('введите текст...')
         } else {
-            alert(text) // если нет ошибки показать текст
+            alert(text)
         }
     }
 
@@ -33,41 +33,31 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    spanClassName={s.testSpanError}
                 />
+                <Input/>
 
-                {/*<SuperInputText*/}
-                {/*    className={s.blue} // проверьте, работает ли смешивание классов*/}
-                {/*/>*/}
-
-                {/*----------------------------------------------------*/}
-
-                <Button >
-                    default
-                </Button>
+                <Button>default</Button>
 
                 <Button
-                    error={error} // пропсу с булевым значением не обязательно указывать true
+                    error={error}
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    delete
                 </Button>
 
                 <Button disabled>
                     disabled
                 </Button>
 
-                {/*----------------------------------------------------*/}
-
-                <SuperCheckbox
+                <Checkbox
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text {/*// этот текст попадёт в children*/}
-                </SuperCheckbox>
+                    some text
+                </Checkbox>
 
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <Checkbox checked={checked} onChange={testOnChange}/>
             </div>
         </div>
     )

@@ -7,11 +7,3 @@
     min-height: 70px;
     background: #d2f600;
 }
-
-.blue {
-    border-bottom: 5px solid blue;
-}
-
-.testSpanError {
-    color: blue;
-}

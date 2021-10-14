@@ -1,0 +1,20 @@
+.labelCheckbox {
+    display: flex;
+}
+
+.spanClassName {
+    margin-left: 6px;
+}
+
+.finalInputClassName {
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -1px;
+    border: none;
+    transform: rotate(0)
+}
+
+
+
+
